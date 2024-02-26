@@ -38,7 +38,7 @@ const links = [
     icon: ["fab", "tiktok"],
   },
   {
-    link: "https://www.bonfire.com/store/braydens-very-diverse-store",
+    link: "https://www.bonfire.com/store/keeflers-very-diverse-store/",
     title: "'Not High' Merch",
     icon: ["fas", "shopping-cart"],
   },

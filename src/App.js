@@ -56,6 +56,7 @@ function App() {
       <div className="App">
         <Header />
         <iframe
+          title="Music"
           style={{ "border-radius": "12px", marginTop: "0px" }}
           src="https://open.spotify.com/embed/playlist/3gOrriKXnCXVFlNni3eZo4?utm_source=generator"
           width="100%"
@@ -66,6 +67,7 @@ function App() {
           loading="lazy"
         ></iframe>
         <iframe
+          title="Music Video"
           style={{
             marginTop: "50px",
             marginBottom: "40px",
@@ -73,7 +75,6 @@ function App() {
           }}
           height="315"
           src="https://www.youtube.com/embed/-DfHnyYowHA?si=cjy_dCxgbTWigllj"
-          title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"

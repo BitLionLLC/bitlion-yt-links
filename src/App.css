@@ -4,14 +4,13 @@
 }
 
 body {
-  background-image: url('./assets/app-background.jpg');
+  background-image: url("./assets/app-background.jpg");
   background-size: cover;
-  background-color: #B850A5;
+  background-color: #b850a5;
 }
 
 .container {
   display: flex;
-
 }
 
 .App {
@@ -22,7 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #DF3278;
+  background-color: #df3278;
   padding: 50px;
   border-radius: 10px;
 }
@@ -36,7 +35,7 @@ body {
   max-width: 540px;
   display: flex;
   justify-content: space-between;
-  background-color: #F582BC;
+  background-color: #f582bc;
   padding: 12.5px 30px;
   border-radius: 40px;
   font-weight: bold;
@@ -50,21 +49,23 @@ body {
 .left-logo {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: calc(100vh - 500px);
 }
 
 .left-logo img {
-  padding: 0 20px 400px 0;
+  padding: 0 20px 0 0;
 }
 
 .right-logo {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: calc(100vh - 500px);
 }
 
 .right-logo img {
-  padding: 0 0 400px 20px;
+  padding: 0 0 0 20px;
 }
 
 .single-link-a {
@@ -85,7 +86,7 @@ body {
 .fa-icon {
   height: 30px;
   width: 30px;
-  background-color: rgba(255,255,255,0.35);
+  background-color: rgba(255, 255, 255, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +112,6 @@ body {
   .left-logo img {
     padding: 0;
     margin: 0;
-    
   }
 
   .right-logo {
@@ -143,7 +143,7 @@ body {
 
 .live-text {
   color: red;
-  background-color: rgba(255,255,255,0.35);
+  background-color: rgba(255, 255, 255, 0.35);
   padding: 2px 5px;
   border-radius: 10px;
 }

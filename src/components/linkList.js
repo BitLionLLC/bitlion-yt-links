@@ -42,23 +42,6 @@ const links = [
     title: "'Not High' Merch",
     icon: ["fas", "shopping-cart"],
   },
-  {
-    link: "https://www.yasglass.com/not-high-pipes.html",
-    title: "'Not High' Pipes",
-    icon: ["fas", "joint"],
-  },
-  {
-    link: "https://onlyfans.com/keefler_elf",
-    title: "OnlyFans",
-    icon: ["fas", "lock"],
-    color: "#00AFF0",
-  },
-  {
-    link: "https://www.amazon.com/hz/wishlist/ls/2NDKMZL4ULQ61",
-    title: "Amazon Wishlist",
-    icon: ["fab", "amazon"],
-    color: "#b16501",
-  },
 ];
 
 const LinkList = ({ isLive }) => {

@@ -57,10 +57,13 @@ function App() {
         <Header />
         <iframe
           title="Music"
-          style={{ "border-radius": "12px", marginTop: "10px" }}
+          style={{
+            "border-radius": "12px",
+            marginTop: "10px",
+            width: "clamp(200px, 100%, 600px)",
+            height: "375px",
+          }}
           src="https://open.spotify.com/embed/playlist/3WAb6ZfS3n6ZXQPTMBYQs9?utm_source=generator&theme=0"
-          width="100%"
-          height="352"
           frameBorder="0"
           allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -71,9 +74,10 @@ function App() {
           style={{
             marginTop: "50px",
             marginBottom: "40px",
-            width: "clamp(200px, 560px, 100%)",
+            width: "clamp(200px, 100%, 600px)",
+            borderRadius: "15px",
+            height: "375px",
           }}
-          height="315"
           src="https://www.youtube.com/embed/-DfHnyYowHA?si=cjy_dCxgbTWigllj"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -58,7 +58,7 @@ function App() {
         <iframe
           title="Music"
           style={{ "border-radius": "12px", marginTop: "10px" }}
-          src="https://open.spotify.com/embed/playlist/3gOrriKXnCXVFlNni3eZo4?utm_source=generator"
+          src="https://open.spotify.com/embed/playlist/3WAb6ZfS3n6ZXQPTMBYQs9?utm_source=generator&theme=0"
           width="100%"
           height="352"
           frameBorder="0"

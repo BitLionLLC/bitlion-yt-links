@@ -8,8 +8,26 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import keeflerLogo from "./assets/keefler-logo.png";
 import axios from "axios";
 
+import backgroundImage1 from "./assets/app-background1.jpg";
+import backgroundImage2 from "./assets/app-background2.jpg";
+import backgroundImage3 from "./assets/app-background3.jpg";
+import backgroundImage4 from "./assets/app-background4.jpg";
+
+const backgrounds = [
+  backgroundImage1,
+  backgroundImage2,
+  backgroundImage3,
+  backgroundImage4,
+];
+
 function App() {
   const [isLiveOnTwitch, setIsLiveOnTwitch] = useState(false);
+
+  useEffect(() => {
+    document.body.style.backgroundImage = `url(${
+      backgrounds[Math.floor(Math.random() * backgrounds.length)]
+    }`;
+  }, []);
 
   useEffect(() => {
     axios
@@ -50,9 +68,9 @@ function App() {
 
   return (
     <div className="container">
-      <div className="logo left-logo">
+      {/* <div className="logo left-logo">
         <img src={keeflerLogo} width="300" alt="keefler logo" />
-      </div>
+      </div> */}
       <div className="App">
         <Header />
         <iframe
@@ -86,9 +104,9 @@ function App() {
         ></iframe>
         <LinkList isLive={isLiveOnTwitch} />
       </div>
-      <div className="logo right-logo">
+      {/* <div className="logo right-logo">
         <img src={keeflerLogo} width="300" alt="keefler logo" />
-      </div>
+      </div> */}
     </div>
   );
 }

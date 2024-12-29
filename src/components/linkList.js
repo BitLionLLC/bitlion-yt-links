@@ -3,44 +3,22 @@ import SingleLink from "./singleLink";
 
 const links = [
   {
-    link: "https://open.spotify.com/artist/3t3zKVdiWERcdDHg6ei89c",
-    title: "Spotify",
-    icon: ["fab", "spotify"],
-    color: "#1DB954",
+    link: "https://www.youtube.com/@TheMarketMatrixTV",
+    title: "The Market Matrix",
+    icon: ["fab", "youtube"],
+    color: "red",
   },
   {
-    link: "https://www.twitch.tv/keefler_elf",
-    title: "Twitch",
-    icon: ["fab", "twitch"],
-    color: "#6441a5",
+    link: "https://www.youtube.com/@BizarreFactsTV",
+    title: "BizarreFacts",
+    icon: ["fab", "youtube"],
+    color: "red",
   },
   {
-    link: "https://discord.gg/MsEwjY2",
-    title: "Join the Discord!",
-    icon: ["fab", "discord"],
-    color: "#5865F2",
-  },
-  {
-    link: "https://twitter.com/keefler_elf",
-    title: "Twitter",
-    icon: ["fab", "twitter"],
-    color: "#00acee",
-  },
-  {
-    link: "https://www.instagram.com/keefler_elf",
-    title: "Instagram",
-    icon: ["fab", "instagram"],
-    color: "#3f729b",
-  },
-  {
-    link: "https://www.tiktok.com/@keefler_elf",
-    title: "TikTok",
-    icon: ["fab", "tiktok"],
-  },
-  {
-    link: "https://www.bonfire.com/store/keeflers-very-diverse-store/",
-    title: "'Not High' Merch",
-    icon: ["fas", "shopping-cart"],
+    link: "https://www.youtube.com/@FamousRealQuotes",
+    title: "Famous Real Quotes",
+    icon: ["fab", "youtube"],
+    color: "red",
   },
 ];
 

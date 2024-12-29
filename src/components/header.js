@@ -1,14 +1,14 @@
 import React from 'react';
-import keeflerImg from '../assets/keefler.jpg';
+import bitlionPic from '../assets/MJ.jpg';
 
 function Header() {
   return (
     <div className="header">
       <div id="hero-image-container">
-        <img src={keeflerImg} alt="Keefler" width="100%" className="hero-image" />
+        <img src={bitlionPic} alt="Keefler" width="100%" className="hero-image" />
       </div>
-      <h1>Keefler</h1>
-      <p>Musician, Twitch streamer</p>
+      <h1>BitLion</h1>
+      <p>Content Creators</p>
     </div>
   )
 }

@@ -19,12 +19,6 @@ const backgrounds = [
 ];
 
 function App() {
-  useEffect(() => {
-    document.body.style.backgroundImage = `url(${
-      backgrounds[Math.floor(Math.random() * backgrounds.length)]
-    }`;
-  }, []);
-
   return (
     <div className="container">
       <div className="App">

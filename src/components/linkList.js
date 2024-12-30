@@ -3,6 +3,12 @@ import SingleLink from "./singleLink";
 
 const links = [
   {
+    link: "https://www.etsy.com/shop/DesignByBitLion0",
+    title: "Our Etsy shop",
+    icon: ["fas", "cart-shopping"],
+    color: "green",
+  },
+  {
     link: "https://invideo.sjv.io/jrQK40",
     title: "Create videos like ours",
     icon: ["fas", "cart-shopping"],

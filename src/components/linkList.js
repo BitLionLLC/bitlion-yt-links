@@ -3,7 +3,7 @@ import SingleLink from "./singleLink";
 
 const links = [
   {
-    link: "https://www.etsy.com/shop/DesignByBitLion0",
+    link: "https://www.etsy.com/shop/DesignByBitLion",
     title: "Our Etsy shop",
     icon: ["fas", "cart-shopping"],
     color: "green",

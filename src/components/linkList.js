@@ -52,7 +52,7 @@ const links = [
   },
   {
     link: "https://www.youtube.com/@BizarreFactsTV",
-    title: "BizarreFacts",
+    title: "Bizarre Facts",
     icon: ["fab", "youtube"],
     color: "red",
   },

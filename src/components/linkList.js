@@ -1,11 +1,18 @@
 import React from "react";
 import SingleLink from "./singleLink";
+import appStoreIcon from "../assets/app_store.svg";
 
 const links = [
   {
     link: "https://www.etsy.com/shop/DesignByBitLion",
     title: "Our Etsy shop",
     icon: ["fas", "cart-shopping"],
+    color: "green",
+  },
+  {
+    link: "https://apps.apple.com/us/app/budget-plant-id/id6747782540",
+    title: "Budget Plant ID - ID plants without a subscription",
+    icon: <img src={appStoreIcon} alt="App Store Icon" />,
     color: "green",
   },
   {

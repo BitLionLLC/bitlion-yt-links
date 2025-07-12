@@ -17,6 +17,12 @@ const links = [
     color: "green",
   },
   {
+    link: "",
+    title: "Astral Tarot Reader - Read your tarot card photos",
+    icon: <div><a href="https://play.google.com/store/apps/details?id=com.thebitlion.astraltarotreader"><img src={googlePlayBadge} width={150} alt="Google Play Icon" /></a></div>,
+    color: "green",
+  },
+  {
     link: "https://invideo.sjv.io/jrQK40",
     title: "Create videos like ours",
     icon: ["fas", "video"],

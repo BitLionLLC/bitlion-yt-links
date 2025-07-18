@@ -5,6 +5,12 @@ import googlePlayBadge from "../assets/google_play.png";
 
 const links = [
   {
+    link: "https://www.fluxtrade.net",
+    title: "FluxTrade - Futures trading system (indicators and strategies)",
+    icon: ["fas", "dollar-sign"],
+    color: "green",
+  },
+  {
     link: "https://www.etsy.com/shop/DesignByBitLion",
     title: "Our Etsy shop",
     icon: ["fas", "cart-shopping"],

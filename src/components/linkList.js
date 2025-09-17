@@ -12,7 +12,7 @@ const links = [
   },
   {
     link: "https://www.fluxtrade.net",
-    title: "FluxTrade - NinjaTrader automated strategies",
+    title: "FluxTrade trading strategies (new affiliate program!)",
     icon: ["fas", "dollar-sign"],
     color: "green",
   },

@@ -5,19 +5,19 @@ import googlePlayBadge from "../assets/google_play.png";
 
 const links = [
   {
-    link: "https://www.tripledev.co",
+    link: "https://www.tripledev.co/?utm_source=bitlionus",
     title: "TripleDev Software Development Agency",
     icon: ["fas", "code"],
     color: "black",
   },
   {
-    link: "https://www.fluxtrade.net",
+    link: "https://www.fluxtrade.net/?utm_source=bitlionus",
     title: "FluxTrade trading strategies (new affiliate program!)",
     icon: ["fas", "dollar-sign"],
     color: "green",
   },
   {
-    link: "https://www.etsy.com/shop/DesignByBitLion",
+    link: "https://www.etsy.com/shop/DesignByBitLion/?utm_source=bitlionus",
     title: "Our Etsy shop",
     icon: ["fas", "cart-shopping"],
     color: "blue",

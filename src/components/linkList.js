@@ -22,18 +22,6 @@ const links = [
     icon: ["fas", "cart-shopping"],
     color: "blue",
   },
-  {
-    link: "",
-    title: "Budget Plant ID - identify plants without a subscription",
-    icon: <div><a href="https://apps.apple.com/us/app/budget-plant-id/id6747782540"><img src={appStoreIcon} alt="App Store Icon" width={150} /></a><a href="https://play.google.com/store/apps/details?id=com.thebitlion.plantidentifierflutter"><img src={googlePlayBadge} width={150} alt="Google Play Icon" /></a></div>,
-    color: "green",
-  },
-  {
-    link: "",
-    title: "Astral Life - Read your tarot card photos",
-    icon: <div><a href="https://play.google.com/store/apps/details?id=com.thebitlion.astraltarotreader"><img src={googlePlayBadge} width={150} alt="Google Play Icon" /></a></div>,
-    color: "green",
-  },
 ];
 
 const LinkList = ({ isLive }) => {

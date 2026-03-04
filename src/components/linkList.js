@@ -17,10 +17,10 @@ const links = [
     color: "blue",
   },
   {
-    link: "https://www.tripledev.co/?utm_source=bitlionus",
-    title: "TripleDev Software Development Agency",
-    icon: ["fas", "code"],
-    color: "black",
+    link: "https://stan.store/affiliates/514cd9ae-ed8f-4653-b008-8a2889b7d79b",
+    title: "The Digital Marketing Mini-Course",
+    icon: ["fas", "video"],
+    color: "red",
   },
 ];
 

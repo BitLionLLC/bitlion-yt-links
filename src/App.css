@@ -20,11 +20,12 @@ body {
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   background-color: dodgerblue;
   padding: 50px;
   border-radius: 10px;
+  min-height: 80vh;
 }
 
 .hero-image {
@@ -87,6 +88,9 @@ body {
 .fa-icon {
   height: 30px;
   width: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  flex-shrink: 0;
   background-color: rgba(255, 255, 255, 0.35);
   display: flex;
   align-items: center;

@@ -28,6 +28,12 @@ const links = [
     icon: ["fas", "cart-shopping"],
     color: "blue",
   },
+  {
+    link: "https://chromewebstore.google.com/detail/auto-dark-mode/ececpikikiadgencgepkdkafekilbakj?authuser=1&hl=en&utm_source=bitlionus",
+    title: "Auto Dark Mode chrome extension",
+    icon: ["fas", "moon"],
+    color: "yellow",
+  },
 ];
 
 const LinkList = ({ isLive }) => {

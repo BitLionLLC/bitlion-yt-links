@@ -30,7 +30,7 @@ const links = [
   },
   {
     link: "https://chromewebstore.google.com/detail/auto-dark-mode/ececpikikiadgencgepkdkafekilbakj?authuser=1&hl=en&utm_source=bitlionus",
-    title: "Auto Dark Mode chrome extension",
+    title: "Auto Dark Mode Chrome extension",
     icon: ["fas", "moon"],
     color: "yellow",
   },

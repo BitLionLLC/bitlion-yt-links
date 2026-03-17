@@ -10,12 +10,12 @@ const links = [
     icon: ["fas", "video"],
     color: "red",
   },
-  {
-    link: "https://stan.store/bitlion/?utm_source=bitlionus",
-    title: "Our Stan Store - Learn how to escape your 9-5",
-    icon: ["fas", "store"],
-    color: "black",
-  },
+  // {
+  //   link: "https://stan.store/bitlion/?utm_source=bitlionus",
+  //   title: "Our Stan Store - Learn how to escape your 9-5",
+  //   icon: ["fas", "store"],
+  //   color: "black",
+  // },
   {
     link: "https://www.fluxtrade.net/?utm_source=bitlionus",
     title: "FluxTrade trading strategies (new affiliate program!)",

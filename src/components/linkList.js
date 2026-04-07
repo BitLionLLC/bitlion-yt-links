@@ -11,6 +11,12 @@ const links = [
     color: "black",
   },
   // {
+  //   link: "https://stan.store/affiliates/514cd9ae-ed8f-4653-b008-8a2889b7d79b",
+  //   title: "The Digital Marketing Mini-Course - Learn how we make $8k/mo",
+  //   icon: ["fas", "video"],
+  //   color: "red",
+  // },
+  // {
   //   link: "https://stan.store/bitlion/?utm_source=bitlionus",
   //   title: "Our Stan Store - Learn how to escape your 9-5",
   //   icon: ["fas", "store"],

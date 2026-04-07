@@ -5,10 +5,10 @@ import googlePlayBadge from "../assets/google_play.png";
 
 const links = [
   {
-    link: "https://stan.store/affiliates/514cd9ae-ed8f-4653-b008-8a2889b7d79b",
-    title: "The Digital Marketing Mini-Course - Learn how we make $8k/mo",
-    icon: ["fas", "video"],
-    color: "red",
+    link: "https://www.mostlink.co?utm_source=bitlionus",
+    title: "Mostlink - link page builder",
+    icon: ["fas", "link"],
+    color: "black",
   },
   // {
   //   link: "https://stan.store/bitlion/?utm_source=bitlionus",

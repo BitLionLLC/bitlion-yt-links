@@ -5,6 +5,18 @@ import googlePlayBadge from "../assets/google_play.png";
 
 const links = [
   {
+    link: "https://copecart.com/us/products/ad9b9478/p/grantbitlion",
+    title: "Pass prop firms with AI indicators",
+    icon: ["fas", "money-bill-trend-up"],
+    color: "green",
+  },
+  {
+    link: "https://copecart.com/us/products/94157f4b/p/grantbitlion",
+    title: "Your business on autopilot: save up to 30% of costs annually",
+    icon: ["fas", "robot"],
+    color: "black",
+  },
+  {
     link: "https://www.mostlink.co?utm_source=bitlionus",
     title: "Mostlink - link page builder",
     icon: ["fas", "link"],
@@ -26,7 +38,7 @@ const links = [
     link: "https://chromewebstore.google.com/detail/auto-dark-mode/ececpikikiadgencgepkdkafekilbakj?authuser=1&hl=en&utm_source=bitlionus",
     title: "Auto Dark Mode Chrome extension",
     icon: ["fas", "moon"],
-    color: "yellow",
+    color: "black",
   },
   {
     link: "",

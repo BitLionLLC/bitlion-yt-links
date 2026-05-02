@@ -58,6 +58,12 @@ const links = [
     icon: ["fas", "gem"],
     color: "blue",
   },
+  {
+    link: "https://etsy.me/3VUHXes",
+    title: "Open an Etsy Shop and get 40 free listings!",
+    icon: ["fas", "cart-shopping"],
+    color: "green",
+  },
   // {
   //   link: "https://stan.store/bitlion/?utm_source=bitlionus",
   //   title: "Our Stan Store - Learn how to escape your 9-5",

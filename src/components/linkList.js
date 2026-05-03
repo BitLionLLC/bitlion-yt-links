@@ -35,6 +35,12 @@ const links = [
     color: "blue",
   },
   {
+    link: "https://bitlion.gumroad.com/",
+    title: "Exit Velocity: Escape Your 9-5",
+    icon: ["fas", "rocket"],
+    color: "green",
+  },
+  {
     link: "https://chromewebstore.google.com/detail/auto-dark-mode/ececpikikiadgencgepkdkafekilbakj?authuser=1&hl=en&utm_source=bitlionus",
     title: "Auto Dark Mode Chrome extension",
     icon: ["fas", "moon"],

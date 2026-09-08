@@ -10,18 +10,21 @@ const openWithoutPropagating = (url) => (e) => {
 };
 
 const links = [
-  // {
-  //   link: "https://copecart.com/us/products/ad9b9478/p/grantbitlion",
-  //   title: "Pass prop firms with AI indicators",
-  //   icon: ["fas", "money-bill-trend-up"],
-  //   color: "green",
-  // },
-  // {
-  //   link: "https://copecart.com/us/products/94157f4b/p/grantbitlion",
-  //   title: "Your business on autopilot: save up to 30% of costs annually",
-  //   icon: ["fas", "robot"],
-  //   color: "black",
-  // },
+  {
+    link: "https://www.slowpulse.app/?utm_source=bitlionus",
+    title: "SlowPulse - Impulse control for your phone",
+    icon: (
+      <div
+        role="button"
+        tabIndex={0}
+        style={{ cursor: "pointer" }}
+        onClick={openWithoutPropagating("https://apps.apple.com/us/app/slowpulse/id6804510242")}
+      >
+        <img src={appStoreIcon} alt="Download on the App Store" width={150} />
+      </div>
+    ),
+    color: "green",
+  },
   {
     link: "https://www.budgetplantid.com?utm_source=bitlionus",
     title: "Budget Plant ID - identify plants without a subscription",
@@ -61,18 +64,6 @@ const links = [
     icon: ["fas", "moon"],
     color: "black",
   },
-  // {
-  //   link: "https://stan.store/affiliates/514cd9ae-ed8f-4653-b008-8a2889b7d79b",
-  //   title: "The Digital Marketing Mini-Course - Learn how we make $8k/mo",
-  //   icon: ["fas", "video"],
-  //   color: "red",
-  // },
-  // {
-  //   link: "https://millionairepartnership.com/webclass-d24#aff=blauente",
-  //   title: "Millionaire Partner System - Make $3k/day on autopilot",
-  //   icon: ["fas", "gem"],
-  //   color: "blue",
-  // },
   {
     link: "https://www.mostlink.co?utm_source=bitlionus",
     title: "Mostlink - link page builder",
@@ -85,12 +76,6 @@ const links = [
     icon: ["fas", "cart-shopping"],
     color: "green",
   },
-  // {
-  //   link: "https://stan.store/bitlion/?utm_source=bitlionus",
-  //   title: "Our Stan Store - Learn how to escape your 9-5",
-  //   icon: ["fas", "store"],
-  //   color: "black",
-  // },
 ];
 
 const LinkList = ({ isLive }) => {

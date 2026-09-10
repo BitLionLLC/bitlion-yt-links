@@ -3,10 +3,24 @@ import SingleLink from "./singleLink";
 import appStoreIcon from "../assets/app_store.svg";
 import googlePlayBadge from "../assets/google_play.png";
 
+// iOS Safari blocks window.open() calls that pass a window-features string
+// (it treats them as popups, which are blocked by default), so open a plain
+// new tab and fall back to same-tab navigation when that is blocked too.
 const openWithoutPropagating = (url) => (e) => {
   e.preventDefault();
   e.stopPropagation();
-  window.open(url, "_blank", "noreferrer");
+  const newWindow = window.open(url, "_blank");
+  if (newWindow) {
+    newWindow.opener = null;
+  } else {
+    window.location.href = url;
+  }
+};
+
+const activateOnKey = (url) => (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    openWithoutPropagating(url)(e);
+  }
 };
 
 const links = [
@@ -19,6 +33,7 @@ const links = [
         tabIndex={0}
         style={{ cursor: "pointer" }}
         onClick={openWithoutPropagating("https://apps.apple.com/us/app/slowpulse/id6804510242")}
+        onKeyDown={activateOnKey("https://apps.apple.com/us/app/slowpulse/id6804510242")}
       >
         <img src={appStoreIcon} alt="Download on the App Store" width={150} />
       </div>
@@ -34,6 +49,7 @@ const links = [
         tabIndex={0}
         style={{ cursor: "pointer" }}
         onClick={openWithoutPropagating("https://apps.apple.com/us/app/budget-plant-id/id6747782540")}
+        onKeyDown={activateOnKey("https://apps.apple.com/us/app/budget-plant-id/id6747782540")}
       >
         <img src={appStoreIcon} alt="Download on the App Store" width={150} />
       </div>

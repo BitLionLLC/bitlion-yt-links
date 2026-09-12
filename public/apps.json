@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "updated": "2026-09-12",
+  "developer": {
+    "name": "BitLion, LLC",
+    "url": "https://thebitlion.com",
+    "supportEmail": "grant@thebitlion.com"
+  },
+  "apps": [
+    {
+      "id": "slowpulse",
+      "title": "SlowPulse",
+      "tagline": "Impulse control for your phone",
+      "description": "SlowPulse puts a deliberate pause in front of shopping, doomscroll and food-delivery apps, labels what you were really doing, and shows you the money and time you kept.",
+      "shortDescription": "A one-second pause before the apps that empty your cart and your attention span.",
+      "bundleId": "com.thebitlion.slowpulse",
+      "packageName": "com.thebitlion.slowpulse",
+      "icon": "/apps/icons/slowpulse.png",
+      "category": "Productivity",
+      "websiteUrl": "https://www.slowpulse.app",
+      "appStoreId": "6804510242",
+      "appStoreUrl": "https://apps.apple.com/us/app/slowpulse/id6804510242",
+      "playStoreUrl": null,
+      "privacyUrl": "https://thebitlion.com/privacy",
+      "accentColor": "#22C55E"
+    },
+    {
+      "id": "budget-plant-id",
+      "title": "Budget Plant ID",
+      "tagline": "Identify plants without a subscription",
+      "description": "Point your camera at any plant and get the species, a care guide and a health check in seconds. No subscription — credit packs start at $0.99.",
+      "shortDescription": "Species, care guide and health check from one photo. Pay per identification, no subscription.",
+      "bundleId": "com.thebitlion.plantidentifierflutter",
+      "packageName": "com.thebitlion.plantidentifierflutter",
+      "icon": "/apps/icons/budget-plant-id.png",
+      "category": "Education",
+      "websiteUrl": "https://www.budgetplantid.com",
+      "appStoreId": "6747782540",
+      "appStoreUrl": "https://apps.apple.com/us/app/budget-plant-id/id6747782540",
+      "playStoreUrl": null,
+      "privacyUrl": "https://sites.google.com/thebitlion.com/privacy/home",
+      "accentColor": "#2E7D32"
+    }
+  ]
+}

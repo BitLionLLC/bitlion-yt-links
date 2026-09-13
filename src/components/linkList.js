@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SingleLink from "./singleLink";
 import appStoreIcon from "../assets/app_store.svg";
-import googlePlayBadge from "../assets/google_play.png";
 
 // iOS Safari blocks window.open() calls that pass a window-features string
 // (it treats them as popups, which are blocked by default), so open a plain
@@ -23,48 +22,24 @@ const activateOnKey = (url) => (e) => {
   }
 };
 
-const links = [
-  {
-    link: "https://www.slowpulse.app/?utm_source=bitlionus",
-    title: "SlowPulse - Impulse control for your phone",
-    icon: (
-      <div
-        role="button"
-        tabIndex={0}
-        style={{ cursor: "pointer" }}
-        onClick={openWithoutPropagating("https://apps.apple.com/us/app/slowpulse/id6804510242")}
-        onKeyDown={activateOnKey("https://apps.apple.com/us/app/slowpulse/id6804510242")}
-      >
-        <img src={appStoreIcon} alt="Download on the App Store" width={150} />
-      </div>
-    ),
-    color: "green",
-  },
-  {
-    link: "https://www.budgetplantid.com?utm_source=bitlionus",
-    title: "Budget Plant ID - identify plants without a subscription",
-    icon: (
-      <div
-        role="button"
-        tabIndex={0}
-        style={{ cursor: "pointer" }}
-        onClick={openWithoutPropagating("https://apps.apple.com/us/app/budget-plant-id/id6747782540")}
-        onKeyDown={activateOnKey("https://apps.apple.com/us/app/budget-plant-id/id6747782540")}
-      >
-        <img src={appStoreIcon} alt="Download on the App Store" width={150} />
-      </div>
-    ),
-    color: "green",
-  },
-  {
-    link: "https://www.getmedminder.app/?utm_source=bitlionus",
-    title: "Med Minder - never miss a dose (coming soon)",
-    icon: ["fas", "pills"],
-    color: "blue",
-  },
+const appStoreButton = (appStoreUrl) => (
+  <div
+    role="button"
+    tabIndex={0}
+    style={{ cursor: "pointer" }}
+    onClick={openWithoutPropagating(appStoreUrl)}
+    onKeyDown={activateOnKey(appStoreUrl)}
+  >
+    <img src={appStoreIcon} alt="Download on the App Store" width={150} />
+  </div>
+);
+
+// Links that aren't part of the product catalog in public/apps.json. These are
+// appended after everything the catalog contributes.
+const extraLinks = [
   {
     link: "https://www.fluxtrade.net/?utm_source=bitlionus",
-    title: "FluxTrade trading strategies",
+    title: "FluxTrade automated trading strategies",
     icon: ["fas", "dollar-sign"],
     color: "green",
   },
@@ -81,38 +56,75 @@ const links = [
     color: "green",
   },
   {
-    link: "https://chromewebstore.google.com/detail/auto-dark-mode/ececpikikiadgencgepkdkafekilbakj?authuser=1&hl=en&utm_source=bitlionus",
-    title: "Auto Dark Mode Chrome extension",
-    icon: ["fas", "moon"],
-    color: "black",
-  },
-  {
-    link: "https://www.mostlink.co?utm_source=bitlionus",
-    title: "Mostlink - link page builder",
-    icon: ["fas", "link"],
-    color: "black",
-  },
-  {
     link: "https://etsy.me/3VUHXes",
-    title: "Open an Etsy Shop and get 40 free listings!",
+    title: "Open an Etsy shop and get 40 free listings!",
     icon: ["fas", "cart-shopping"],
     color: "green",
   },
 ];
 
+// A catalog entry only appears on the link page when it carries a `linkList`
+// block. Shipped apps get the App Store badge as their icon; everything else
+// falls back to the Font Awesome icon named in that block.
+const toLink = (item) => {
+  const showAppStore = Boolean(item.appStoreUrl) && !item.comingSoon;
+
+  return {
+    id: item.id,
+    link: item.linkList.url,
+    title: item.linkList.label || `${item.title} - ${item.tagline}`,
+    icon: showAppStore ? appStoreButton(item.appStoreUrl) : item.linkList.icon,
+    color: item.linkList.iconColor,
+    comingSoon: Boolean(item.comingSoon),
+  };
+};
+
 const LinkList = ({ isLive }) => {
-  return links.map((link) => {
-    return (
-      <SingleLink
-        link={link.link}
-        title={link.title}
-        icon={link.icon}
-        altText={link.altText}
-        color={link.color}
-        isLive={isLive}
-      />
-    );
-  });
+  const [catalogLinks, setCatalogLinks] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    fetch(`${process.env.PUBLIC_URL}/apps.json`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`apps.json responded with ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((catalog) => {
+        if (cancelled) return;
+        const items = [
+          ...(catalog.apps || []),
+          ...(catalog.extensions || []),
+          ...(catalog.saas || []),
+        ];
+        setCatalogLinks(items.filter((item) => item.linkList).map(toLink));
+      })
+      .catch((err) => {
+        console.error("Could not load apps.json", err);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  return (
+    <>
+      {[...catalogLinks, ...extraLinks].map((link) => (
+        <SingleLink
+          key={link.id || link.link}
+          link={link.link}
+          title={link.title}
+          icon={link.icon}
+          color={link.color}
+          comingSoon={link.comingSoon}
+          isLive={isLive}
+        />
+      ))}
+    </>
+  );
 };
 
 export default LinkList;

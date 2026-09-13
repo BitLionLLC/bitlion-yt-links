@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "developer": {
     "name": "BitLion, LLC",
     "url": "https://thebitlion.com",
@@ -61,6 +61,21 @@
       "edgeAddonUrl": null,
       "privacyUrl": "https://thebitlion.com/privacy",
       "accentColor": "#1F2937"
+    }
+  ],
+  "saas": [
+    {
+      "id": "mostlink",
+      "title": "Mostlink",
+      "tagline": "One link for everything you make",
+      "description": "Mostlink is a link page builder for creators and small businesses. Put every link you care about — shop, socials, videos, newsletter — on one fast, customizable page, and share it from every bio you have.",
+      "shortDescription": "Build a single link page for all your links, and share it from every bio.",
+      "icon": "/apps/icons/mostlink.png",
+      "category": "Marketing",
+      "websiteUrl": "https://www.mostlink.co",
+      "signupUrl": "https://www.mostlink.co",
+      "privacyUrl": "https://thebitlion.com/privacy",
+      "accentColor": "#2563EB"
     }
   ]
 }

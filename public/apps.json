@@ -22,7 +22,8 @@
       "appStoreUrl": "https://apps.apple.com/us/app/slowpulse/id6804510242",
       "playStoreUrl": null,
       "privacyUrl": "https://www.thebitlion.com/privacy",
-      "accentColor": "#22C55E"
+      "accentColor": "#22C55E",
+      "comingSoon": false
     },
     {
       "id": "budget-plant-id",
@@ -39,7 +40,26 @@
       "appStoreUrl": "https://apps.apple.com/us/app/budget-plant-id/id6747782540",
       "playStoreUrl": null,
       "privacyUrl": "https://www.thebitlion.com/privacy",
-      "accentColor": "#2E7D32"
+      "accentColor": "#2E7D32",
+      "comingSoon": false
+    },
+    {
+      "id": "medminder",
+      "title": "Med Minder",
+      "tagline": "Never miss a dose",
+      "description": "Med Minder keeps your medications and their schedules in one place and reminds you on time — scheduled on the device, so the alarm fires with no connection at all. Tap once to log a dose, swipe to skip, and see how the week actually went.",
+      "shortDescription": "Medication reminders that arrive on time, offline. Tap once to log the dose.",
+      "bundleId": "com.thebitlion.medminder",
+      "packageName": "com.thebitlion.medminder",
+      "icon": "/apps/icons/medminder.png",
+      "category": "Medical",
+      "websiteUrl": "https://www.getmedminder.app",
+      "appStoreId": null,
+      "appStoreUrl": null,
+      "playStoreUrl": null,
+      "privacyUrl": "https://www.thebitlion.com/privacy",
+      "accentColor": "#4C6FFF",
+      "comingSoon": true
     }
   ],
   "extensions": [
@@ -60,7 +80,28 @@
       "firefoxAddonUrl": null,
       "edgeAddonUrl": null,
       "privacyUrl": "https://www.thebitlion.com/privacy",
-      "accentColor": "#1F2937"
+      "accentColor": "#1F2937",
+      "comingSoon": false
+    },
+    {
+      "id": "slowpulse-extension",
+      "title": "SlowPulse for Chrome",
+      "tagline": "A pause between the impulse and the tap",
+      "description": "SlowPulse guards the sites you lose money and hours to. Every visit to one of them is interrupted by a single question first — what this purchase will solve, what's driving the order — and your answer is logged on your own machine, where the dashboard turns it into a streak and the money and time you kept.",
+      "shortDescription": "One question in front of the sites that empty your cart and your evening.",
+      "extensionId": null,
+      "icon": "/apps/icons/slowpulse-extension.png",
+      "category": "Productivity",
+      "browsers": [
+        "chrome"
+      ],
+      "websiteUrl": "https://www.slowpulse.app",
+      "chromeWebStoreUrl": null,
+      "firefoxAddonUrl": null,
+      "edgeAddonUrl": null,
+      "privacyUrl": "https://www.thebitlion.com/privacy",
+      "accentColor": "#37B6FF",
+      "comingSoon": true
     }
   ],
   "saas": [
@@ -74,8 +115,9 @@
       "category": "Marketing",
       "websiteUrl": "https://www.mostlink.co",
       "signupUrl": "https://www.mostlink.co",
-      "privacyUrl": "https://thebitlion.com/privacy",
-      "accentColor": "#2563EB"
+      "privacyUrl": "https://www.thebitlion.com/privacy",
+      "accentColor": "#2563EB",
+      "comingSoon": false
     }
   ]
 }

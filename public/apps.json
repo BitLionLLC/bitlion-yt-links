@@ -41,5 +41,26 @@
       "privacyUrl": "https://sites.google.com/thebitlion.com/privacy/home",
       "accentColor": "#2E7D32"
     }
+  ],
+  "extensions": [
+    {
+      "id": "auto-dark-mode",
+      "title": "Auto Dark Mode",
+      "tagline": "Dark mode on every site, automatically",
+      "description": "Auto Dark Mode applies a clean, readable dark theme to any website that doesn't ship one, and gets out of the way on the sites that do. Flip it on and off per site, or let it follow your system's light/dark setting.",
+      "shortDescription": "Automatic dark mode for every website, with per-site control.",
+      "extensionId": "ececpikikiadgencgepkdkafekilbakj",
+      "icon": "/apps/icons/auto-dark-mode.png",
+      "category": "Productivity",
+      "browsers": [
+        "chrome"
+      ],
+      "websiteUrl": "https://autodarkmode.com",
+      "chromeWebStoreUrl": "https://chromewebstore.google.com/detail/auto-dark-mode/ececpikikiadgencgepkdkafekilbakj",
+      "firefoxAddonUrl": null,
+      "edgeAddonUrl": null,
+      "privacyUrl": "https://thebitlion.com/privacy",
+      "accentColor": "#1F2937"
+    }
   ]
 }

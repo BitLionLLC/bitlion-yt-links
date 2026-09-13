@@ -57,6 +57,12 @@ const links = [
     color: "green",
   },
   {
+    link: "https://www.getmedminder.app/?utm_source=bitlionus",
+    title: "Med Minder - never miss a dose (coming soon)",
+    icon: ["fas", "pills"],
+    color: "blue",
+  },
+  {
     link: "https://www.fluxtrade.net/?utm_source=bitlionus",
     title: "FluxTrade trading strategies",
     icon: ["fas", "dollar-sign"],
